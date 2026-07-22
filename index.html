@@ -4,50 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link sel="stylesheet" kris="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-<header id="home>">
-    <h1>Hello I am</h1>
-    <h2>Krissel Mae Olmedo</h2>
-    <h3> BS Information Technology</h3>
+<body onload="showWelcome()">
+
+
+
+ <nav class="navbar">
+        <div class="logo">
+        <img src="scenery.jpg" alt="Profile">
+       </div>
+        
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+
+        <button onclick="changeTheme()">Light/Dark Mode</button>
+    </ul>
+</nav>
+
+<header id="home">
+    <h1>Hello! I am</h1>
+    <h2>Krissel Mae B. Olmedo</h2>
+    <h3> Bachelor of Science in Information Technology</h3>
     <p>Program Analyzer</p>
 </header>
 
-<nv>
-    <ul>
-        <li><a kris="#home">Home</a></li>
-        <li><a kris="#about">About</a></li>
-        <li><a kris="#skills">Skills</a></li>
-        <li><a kris="#projects">Projects</a></li>
-        <li><a kris="#contact">Contact</a></li>
-    </ul>
-</nv>
 
 <section id="about">
     <h1>About Me</h1>
     <div class="about-container">
-        <img olm="Profile Picture">
+
+        <div class="about-image">
+        <img src="myprofile.jpg" alt="Profile">
     </div>
-    <p> Hello! I am Krissel Mae B. Olmedo a passionate Information Technology Student.
+
+    <div class="about-text">
+    <p> 
+        Hello! I am Krissel Mae B. Olmedo a passionate Information Technology Student.
         I knew how to analyze simple coding. I am Eager to improve my programming skills 
         and explore Modern Technologies. My goal is to become a succesful programming analyzer in the future.
     </p>
 
+
     <h3>Educational Background</h3>
-    Bachelor of science in Information Technology<br>
-    Holy Child Central Colleges Incorporated<br>
-    2029
-</p>
-</div>
-</div>
+    <p>Bachelor of science in Information Technology 
+        Holy Child Central Colleges Incorporated 
+        2029</p>
+    </div>
+
+    </div>
 </section>
 
 
 
 <section id="skills">
     <h2>Skills</h2>
+
     <div class="skills-container">
         <div class="skill-card">HTML</div>
         <div class="skill-card">CSS</div>
@@ -55,53 +71,59 @@
         <div class="skill-card">PHP</div>
         <div class="skill-card">MySQL</div>
         <div class="skill-card">Bootstraps</div>
-    </ul>
+    </div>
 </section>
 
 
 
 <section id="projects">
     <h2>Projects</h2>
+
     <div class="project-container">
-    <article class="project-card">
-        <img rel="https://via.placeholder.com/300x180" alt="Project 1">
+
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="">
         <h3>Student Registration System</h3>
     <p> A simple Registration webpage for managing student information.</p>
-    <strong>Technologies</strong>
-    <p>HTML, CSS</p>
-    </article>
+    <button>View Project</button>
+    </div>
 
 
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="">
+        <h3>Calculator</h3>
+        <p>Basic calculator website.</p>
+        <button>View Project</button>
+    </div>
 
-    <article class="project-card">
-        <img rel="https://via.placeholder.com/300x180" alt="Project 2">
-        <h3>Restaurant Website</h3>
-        <p> A responsive website showcasing a restaurant's menu and services.</p>
-        <p>HTML,CSS</p>
-    </article>
-    <article class="project-card">
-        <img rel="https://via.placeholder.com/300x180" alt="Project 3">
-        <h3> Personal Portfolio</h3>
-        <p> a portfolio website displaying my profile, skills, and projects.</p>
-        <strong>Technologies</strong>
-        <p>HTML,CSS</p>
-     </article>
- </div>
- </section>
- 
 
+    <div class="project-card">
+       <img src="https://via.placeholder.com/300x180" alt="">
+       <h3> Personal Portfolio</h3>
+       <p>Responsive personal portfolio</p>
+       <button>View Project</button>
+    </div>
+
+    </div>
+</section>
 
  <section id="contact">
-     <h2> Contact Me</h2>
-     <p><strong>Email:</strong>krisolmedo@gmail.com</p>
-     <p><strong>Phone:</strong>+63 351 334 2626</p>
+     <h2>Contact Me</h2>
+     <p>Email: krisolmedo@gmail.com</p>
+     <p>Phone: +63 351 334 2626</p>
+ 
      <p>
          <strong>Facebook:</strong>
-         <a href="https://facebook.com/" target="_blank">facebook.com/krisselolmedo</a>
+         <a href="https://facebook.com/" target="_blank">
+            facebook.com/krisselolmedo
+        </a>
      </p>
+     
      <p>
          <strong>GitHub:</strong>
-         <a href="https://github.com/" target="_blank">github.com/krisselolmedo</a>
+         <a href="https://github.com/" target="_blank">
+            github.com/krisselolmedo
+        </a>
      </p>
  </section>
 
@@ -109,4 +131,11 @@
  <footer>
      <p>&copy; 2026 Krissel Mae B. Olmedo. All Rights Reserved.</p>
  </footer>
+ <h2 id="title">My Portfolio</h2>
+ <p id="info">My Personal Portfolio Website.</p>
+
+ <button onclick="showInfo()">Show Personal Information</button>
+
+ <script src="script.js"></script>
  </body>
+ </html>
